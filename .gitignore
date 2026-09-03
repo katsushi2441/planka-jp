@@ -3,3 +3,4 @@
 /scripts/demo_*.py
 __pycache__/
 /docker-compose.yml
+/upstream-fork/

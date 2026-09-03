@@ -1,0 +1,5 @@
+/outputs/
+/scripts/shots_*.py
+/scripts/demo_*.py
+__pycache__/
+/docker-compose.yml

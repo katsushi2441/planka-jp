@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """planka client/src/locales/ja-JP/core.js に無いキーをローカルgemma4(think:false)で翻訳。ICU/{{x}}/{x}プレースホルダ逐語保持を検証。"""
 import json,os,re,requests,sys,time
-SRC=sys.argv[1]; DST=sys.argv[2]; URL=os.environ.get("OLLAMA_URL","http://192.168.0.3:11434")+"/api/generate"; MODEL="gemma4:12b-it-qat"
+SRC=sys.argv[1]; DST=sys.argv[2]; URL=os.environ.get("OLLAMA_URL","http://localhost:11434")+"/api/generate"; MODEL="gemma4:12b-it-qat"
 en={}; 
 for ln in open(SRC,encoding='utf-8'):
     k,_,v=ln.rstrip('\n').partition('\t'); 
